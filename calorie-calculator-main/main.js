@@ -30,12 +30,12 @@ function calcularCalorias() {
 
    if(parseInt(edad.value) >=18 && parseInt(edad.value) <= 29 )
    {
-     alert("eres joven");
+     alert("Eres joven");
    }else if(parseInt(edad.value) <= 59)
    {
-     alert("eres adulto");
+     alert("Eres adulto");
    }else{
-     alert("eres adulto mayor");
+     alert("Eres adulto mayor");
    }
    
 
