@@ -26,6 +26,19 @@ function calcularCalorias() {
         return
     }
 
+    //grupo poblacional
+
+   if(parseInt(edad.value) >=18 && parseInt(edad.value) <= 29 )
+   {
+     alert("eres joven");
+   }else if(parseInt(edad.value) <= 59)
+   {
+     alert("eres adulto");
+   }else{
+     alert("eres adulto mayor");
+   }
+   
+
     const multiplicadorTMB = {
         peso: 10,
         altura: 6.25,
@@ -40,6 +53,8 @@ function calcularCalorias() {
              (multiplicadorTMB.altura * altura.value) - (multiplicadorTMB.edad * edad.value);
 
     calcularCalorias = (genero.id=='femenino')?producto-161:producto-5;
+
+    /calcularCalorias = (genero.id=='masculino')?producto-161:producto-5;
  
     
     //Formula hombres: valor actividad x (10 x peso en kg) + (6,25 × altura en cm) - (5 × edad en años) + 5
