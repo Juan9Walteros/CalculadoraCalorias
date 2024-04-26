@@ -54,7 +54,7 @@ function calcularCalorias() {
 
     calcularCalorias = (genero.id=='femenino')?producto-161:producto-5;
 
-    /calcularCalorias = (genero.id=='masculino')?producto-161:producto-5;
+    //calcularCalorias = (genero.id=='masculino')?producto-161:producto-5;
  
     
     //Formula hombres: valor actividad x (10 x peso en kg) + (6,25 × altura en cm) - (5 × edad en años) + 5
