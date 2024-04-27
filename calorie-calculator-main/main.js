@@ -28,7 +28,7 @@ function calcularCalorias() {
 
     //grupo poblacional
 
-   if(parseInt(edad.value) >=18 && parseInt(edad.value) <= 29 )
+   if(parseInt(edad.value) >=15 && parseInt(edad.value) <= 29 )
    {
      alert("Eres joven");
    }else if(parseInt(edad.value) <= 59)
@@ -52,7 +52,7 @@ function calcularCalorias() {
     let producto = actividad.value * (multiplicadorTMB.peso * peso.value) +
              (multiplicadorTMB.altura * altura.value) - (multiplicadorTMB.edad * edad.value);
 
-    calcularCalorias = (genero.id=='femenino')?producto-161:producto-5;
+    calcularCalorias = (genero.id=='femenino')?producto-161:producto+5;
 
     //calcularCalorias = (genero.id=='masculino')?producto-161:producto-5;
  
